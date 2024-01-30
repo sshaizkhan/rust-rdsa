@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "robot_description_setup_assistant"
+]
+resolver = "2"
