@@ -14,6 +14,15 @@ impl Default for Origin {
     }
 }
 
+impl Clone for Origin {
+    fn clone(&self) -> Self {
+        Self {
+            xyz: self.xyz,
+            rpy: self.rpy,
+        }
+    }
+}
+
 #[derive(Debug)]
 pub struct Calibration {
     pub rising: Option<f64>,
